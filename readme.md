@@ -1,7 +1,6 @@
-
 # Setup Instructions
 
-This project is designed to be used as a Cloudflare Worker that utilizes Durable Objects to manage counters and D1 databases for data storage, as well as 1Password for handling secrets. 
+This project is designed to illustrate how you can currently use SST Ion together with Cloudflare D1 (through Drizzle), Durable Objects and 1Password for secret handling.
 
 The Durable object and the Worker used to interact with it currently need to be deployed to Cloudflare in a separate step using Wrangler. Until Cloudflare adds more support for this in their Terraform/Pulumi provider this is the only way to do this.
 
@@ -69,3 +68,7 @@ To set up this project, follow these steps:
    This command will launch the Drizzle Studio interface in your browser, allowing you to explore your database, run queries, and manage your data easily.
 
 Remember to replace the placeholders with your actual values and adjust the instructions according to your specific use case.
+
+# Acknowledgements
+
+First off - so much kudos to the SST team for creating an amazing product with SST Ion. The D1/Drizzle component of this also builds upon Jack Blancs (https://github.com/jackblanc/cloudflare-d1-trpc-api/commits?author=jackblanc) implementation of D1/Drizzle through ION here - https://github.com/jackblanc/cloudflare-d1-trpc-api.
