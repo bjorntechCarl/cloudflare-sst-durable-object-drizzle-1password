@@ -1,0 +1,11 @@
+name = "durable_objects_counter"
+compatibility_date = "2024-05-01"
+main = "counter.ts"
+
+[[durable_objects.bindings]]
+name = "COUNTERS"
+class_name = "Counter"
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["Counter"]

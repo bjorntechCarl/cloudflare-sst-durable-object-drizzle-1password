@@ -1,0 +1,29 @@
+{
+  "name": "cloudflare-sst-durable-object-drizzle-1password",
+  "version": "1.0.0",
+  "description": "Cloudflare SST Durable Object Drizzle 1Password",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./sst.sh dev",
+    "deploy": "./sst.sh deploy",
+    "wrangler:deploy": "./wrangler.sh deploy",
+    "db:generate": "./sst.sh shell drizzle-kit generate",
+    "db:migrate": "./sst.sh shell drizzle-kit migrate",
+    "studio": "./sst.sh shell drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "bjorntechCarl",
+  "license": "ISC",
+  "dependencies": {
+    "hono": "^4.4.7",
+    "sst": "ion",
+    "drizzle-kit": "^0.22.0-18d9643",
+    "drizzle-orm": "^0.31.0-6df4b83"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240620.0",
+    "@types/bun": "^1.1.6",
+    "wrangler": "^3.64.0"
+  }
+}
