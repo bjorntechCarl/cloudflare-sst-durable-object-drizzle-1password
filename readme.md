@@ -1,11 +1,18 @@
-# Setup Instructions
+# Introduction
 
 This project is designed to illustrate how you can currently use SST Ion together with Cloudflare D1 (through Drizzle), Durable Objects and 1Password for secret handling.
 
 The Durable object and the Worker used to interact with it currently need to be deployed to Cloudflare in a separate step using Wrangler. Until Cloudflare adds more support for this in their Terraform/Pulumi provider this is the only way to do this.
 
-This project also illustrates how you can deploy a D1 database using SST and how to interact with it using Drizzle
+This project also illustrates how you can deploy a D1 database using SST and how to interact with it using Drizzle.
 
+# Prerequisites
+
+- SST 
+- 1Password CLI
+- Bun
+
+# Setup Instructions
 
 To set up this project, follow these steps:
 
