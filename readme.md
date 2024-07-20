@@ -20,13 +20,13 @@ To set up this project, follow these steps:
    This command will install all the dependencies listed in `package.json`.
 
 3. **Set up environment variables**:
-   Create a file named `env.txt` in the project root directory and add your environment variables in the format `KEY=VALUE`. For example:
+   Create a file named `env.txt` in the project root directory and add your environment variables in the format `KEY=VALUE`. These should all be secret references to 1password. For example:
    ```
    REF_OP_SERVICE_ACCOUNT_TOKEN=your-op-service-account-token
    REF_CLOUDFLARE_API_TOKEN=your-cloudflare-api-token
    REF_CLOUDFLARE_DEFAULT_ACCOUNT_ID=your-cloudflare-default-account-id
    ```
-   Replace the placeholders with your actual values. Consider using 1Password to securely manage and retrieve your secrets.
+   Replace the placeholders with your actual values.
 
 4. **Deploy to Cloudflare - SST**:
    To deploy the project using SST, run the following command:
